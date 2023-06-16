@@ -8,7 +8,7 @@ This is a simple search engine implemented using Flask framework in Python. The 
 
 ## Web Application
 
-It uses [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) Algorithm to implement search. The server is live on https://searchengine-1azs.onrender.com/.
+It uses [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) Algorithm to implement search. The server is live on https://leetcompasss.onrender.com/.
 
 ## Requirements
 
