@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Search Engine 💻</title>
+  <title>LeetCompass</title>
+  <link rel="icon" href="searchbar.jpg" type="image/jpg">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> <!-- Font awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> <!-- Font Awesome for icons -->
+
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* new font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); /* new font for headings */
+
     html, body {
       height: 100%;
-      background-position: center;
+      margin: 0;
+      padding: 0;
+      background: url('https://i.pinimg.com/564x/cb/a3/ba/cba3bab4bb54681ad21b0a661a04fe53.jpg') no-repeat center center fixed;  /* adjust URL as needed */
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: 'Roboto', sans-serif; /* apply the new font */
     }
-    
-    h2 {
-      color: #333;
-      font-size: 24px;
-      font-weight: bold;
+
+    /* Navbar */
+    .navbar {
+      background-color: #343a40;
+      color: #f8f9fa;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #343a40;
+      padding: 10px;
+      text-align: right;
+      color: #f8f9fa;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 22px;
+    }
+
+    footer i {
+  font-size: 24px; /* Increased icon size */
+}
+
+    footer a {
+      color: #f8f9fa;
+      margin-right: 10px;
+    }
+
+    h1, h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 50px;
+      color: #ffffff;
       text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
     }
 
     .container {
-      background-color: black;
-      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -29,14 +68,23 @@
       min-height: 100vh; 
       padding: 20px;
       box-sizing: border-box; 
+      margin-top: 72px;
+
     }
+    .container h1 {
+      color: #ffffcc;
+    }
+    .form h2 {
+  color: #000000; /* Black color */
+}
+
+
 
     .form {
       max-width: 600px;
       width: 100%;
       padding: 20px;
-      /*background-color: #7acae0;*/
-      background-color: #37e465;
+      background-color: #ffffcc; /* light gray form background */
       border: 1px solid #0b0b0b;
       border-radius: 5px;
       margin-bottom: 20px;
@@ -49,7 +97,7 @@
 
     .card {
       background-color: whitesmoke;
-      font-family: Georgia, serif;
+      font-family: 'Arial', sans-serif;
       font-size: 15px;
       font-weight: bold;
       margin-top: 2px;
@@ -57,10 +105,8 @@
       text-align: center;
     }
     .card:hover {
-      transform: scale(1.2);
-      /*background-color: #37e465;
-      background-color: #7acae0;*/
-      background-color: #97FFFF;
+      transform: scale(1.1); /* reduced the scaling for smoother transition */
+      background-color: #b2d8d8; /* change the hover color */
     }
 
     .card-title a {
@@ -72,12 +118,27 @@
     }
 
     .card-title a:hover {
-      color: #525ee6;
+      color: #0080ff; /* changed the hover color to blue */
     }
   </style>
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-compass" style="font-size: 24px;"></i> <!-- compass icon -->
+      LeetCompass
+    </a>    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    </div>
+  </nav>
+
+  <!-- Container -->
   <div class="container">
+    <h1>LeetCompass</h1> <!-- added new heading -->
     <div class="form text-center">
       <h2>SEARCH ENGINE</h2>
       <form method="POST">
@@ -109,5 +170,14 @@
       </div>
     </div>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 LeetCompass | 
+      <a href="https://www.instagram.com/_tiyas17/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/_tiyas17" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/tiyas-maji-613597212" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </p>
+  </footer>
 </body>
 </html>

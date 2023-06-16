@@ -110,7 +110,8 @@ def calculate_sorted_order_of_documents(query_terms):
     for document in potential_documents:
         potential_documents[document] /= len(query_terms)
 
-    potential_documents = dict(sorted(potential_documents.items(), key=lambda item: item[1], reverse=True))
+    potential_documents = dict(
+        sorted(potential_documents.items(), key=lambda item: item[1], reverse=True))
 
     ans = []
     for document_index in potential_documents:
@@ -124,9 +125,11 @@ def calculate_sorted_order_of_documents(query_terms):
 
     return ans
 
+
 class SearchForm(FlaskForm):
-    search = StringField('ENTER YOUR SEARCH TERM')
-    num_questions = SelectField('NUMBER OF QUESTIONS', choices=[('5', '5'), ('10', '10'), ('15', '15'), ('20', '20')])
+    search = StringField('Enter the keywords..')
+    num_questions = SelectField('Number of questions', choices=[
+                                ('5', '5'), ('10', '10'), ('15', '15'), ('20', '20')])
     submit = SubmitField('SEARCH')
 
 
