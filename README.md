@@ -27,7 +27,7 @@ It uses [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) Algorithm to impl
 
 1. Clone the repository :
    ```bash
-   git clone [https://github.com/Tiyas17/LeetCompass.git]
+   git clone https://github.com/Tiyas17/LeetCompass.git
    cd LeetCompass
    ```
 2. Install the required dependencies using pip :
