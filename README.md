@@ -1,14 +1,12 @@
 # LeetCompass
+
 An web application to surf Leetcode question(will integrate other coding platforms later)
-
-
-# Search Engine
 
 This is a simple search engine implemented using Flask framework in Python. The search engine allows users to enter a search term and retrieve relevant documents based on TF-IDF (Term Frequency-Inverse Document Frequency) ranking.
 
 ## Web Application
 
-It uses [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) Algorithm to implement search. The server is live on https://leetcompasss.onrender.com/.
+It uses TF-IDF Algorithm to implement search. The server is live on https://leetcompasss.onrender.com/.
 
 ## Requirements
 
@@ -21,7 +19,6 @@ It uses [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) Algorithm to impl
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-
 
 ## Installation
 
@@ -36,14 +33,13 @@ It uses [TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) Algorithm to impl
    pip install flask-wtf
    pip install chardet
    ```
-3. Delete tf-idf folder 
+3. Delete tf-idf folder
 
 4. Run the `prepare.py` script to make tf-idf folder :
    ```bash
    python -u prepare.py
    ```
 5. Run `app.py` to check the working of server
-
 
 ## Running the Search Engine
 
@@ -67,4 +63,3 @@ For Demo : visit `[https://leetcompasss.onrender.com]`
 ## Conclusion
 
 This search engine provides a basic implementation of a TF-IDF ranking-based search algorithm. It can be further enhanced with additional features such as relevance feedback, query expansion, and more sophisticated ranking algorithms. Feel free to explore and customize the code according to your requirements.
-
