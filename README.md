@@ -57,9 +57,7 @@ Open your web browser and visit `http://127.0.0.1:5000` to access the search eng
 
 ## Search Functionality
 
-The search engine provides a simple user interface where users can enter a search term and specify the number of questions to retrieve. Upon submitting the search query, the search engine calculates the TF-IDF score for each document and returns the top-ranked documents based on the query relevance.
-
-The search functionality is implemented in the `calculate_sorted_order_of_documents()` function, which takes a list of query terms and returns a sorted list of documents along with their scores and question links.
+The search engine offers an uncomplicated interface that allows users to input a search term and indicate the desired number of questions to retrieve. After submitting the search query, the search engine evaluates the TF-IDF score for each document and presents the most relevant documents based on the query. The search functionality is executed through the calculate_sorted_order_of_documents() function, which accepts a list of query terms and generates a sorted list of documents along with their scores and question links.
 
 ## User Interface
 
@@ -70,12 +68,3 @@ For Demo : visit `[https://leetcompasss.onrender.com]`
 
 This search engine provides a basic implementation of a TF-IDF ranking-based search algorithm. It can be further enhanced with additional features such as relevance feedback, query expansion, and more sophisticated ranking algorithms. Feel free to explore and customize the code according to your requirements.
 
-Please note that the code provided here is a simplified version for demonstration purposes and may not be suitable for production use.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-## Authors
-
-[@Tiyas17](https://github.com/Tiyas17)
